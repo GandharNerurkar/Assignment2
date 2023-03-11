@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Data Displayed</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Your Data</h1>
+            <ul>
+                <li>
+                    Name: 
+                    <span id="uname">null</span>
+                </li>
+                 <li>
+                    Mob: 
+                    <span id="mob">null</span>
+                </li>
+                
+                <li>
+                    Email: 
+                    <span id="email">null</span>
+                </li>
+                <li>
+                    Collage name: 
+                    <span id="cname">null</span>
+                </li>
+                <li>
+                    Event name: 
+                    <span id="ename">null</span>
+                </li>
+            </ul>
+        </div>
+        
+        
+        <script>
+            var uname = localStorage.getItem("uname");
+            var email = localStorage.getItem("email");
+            var mob = localStorage.getItem("mob");
+            var cname = localStorage.getItem("cname");
+            var ename = localStorage.getItem("ename");
+            
+            document.getElementById("uname").innerHTML=uname;
+            document.getElementById("email").innerHTML=email;
+            document.getElementById("mob").innerHTML=mob;
+            document.getElementById("cname").innerHTML=cname;
+            document.getElementById("ename").innerHTML=ename;
+            
+            localStorage.clear();
+        </script>
+        
+    </body>
+</html>
